@@ -12,7 +12,7 @@ const snackBar = (icon, msg)=>{
       Swal.fire({
         title: msg,
         icon: icon,
-        timer : 2000
+        timer : 1500
     })
 }
 
@@ -79,6 +79,10 @@ const temp =(data)=>{
                     </div>
                     <div class="card-body">
                         <p>${blog.content}</p>
+                    </div>
+                     <div class="card-footer d-flex justify-content-between">
+                        <i class="fa-solid fa-pen-to-square fa-2x" style="color: #63E6BE;"></i>
+                        <i class="fa-solid fa-trash-can-arrow-up fa-2x" style="color: #ff0000;"></i>
                     </div>
                 </div>
             </div>
