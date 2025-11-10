@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog_Task</title>
+    
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/0e8892aa90.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+         
+      <div class="col-md-4 offset-4 col-sm-6 offset-2 mt-2">
+       <form id="blogForm">
+        <div class="card">
+           <div class="card-body">
+          
+              <div class="form-group">
+              <label for="PostBlog" class=" text-center">PostBlog</label> 
+              <input type="text" name="Blog" id="PostBlog" class="form-control mb-5">
+
+               <label for="blogContent" class=" text-center">Content</label> 
+                   <textarea name="blogContent" id="blogContent" class="form-control"></textarea>
+              <!-- <input type="text" name="Blog" id="blogContent" class="form-control"> -->
+                 </div>
+                <button class="btn btn-outline-primary btn-sm btn-block mt-5">Add Blog</button>
+                <button class="btn btn-outline-primary btn-sm btn-block mt-5 d-none">Update Blog</button>  
+           
+            </div>
+           </div>
+           </form>
+           </div>
+           </div>
+         </div>
+
+         <div class="container-fluid">
+          <div class="row mt-1" id="blogContainer">
+             <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                       <h5>Js</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>A high-level, dynamic, interpreted programming language used to make web pages interactive.
+                                Runs in the browser and also on servers using Node.js.</p>
+                    </div>
+                </div>
+            </div> 
+         </div>
+         </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
