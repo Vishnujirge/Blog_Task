@@ -35,12 +35,12 @@ const onSubEve =(eve)=>{
 const postBlogDB = (obj)=>{
     setTimeout (()=>{
 
-    let error1 = Math.random()>.5 ? false : true;
+    let error1 = Math.random()>0.4 ? false : true;
     
     if(!error1){
         PostBlogArr.push(obj);
           FetchBlog(PostBlogArr);
-          snackBar("succsses","Added");
+          snackBar("success","Added");
 
     }else{
 
@@ -52,14 +52,15 @@ const postBlogDB = (obj)=>{
 
 const FetchBlog = (arr)=>{
     setTimeout(()=>{
-            let error1 = Math.random()>.5 ? false : true;
+            let error1 = Math.random()>0.4 ? false : true;
 
             if(!error1){
-                let data = arr;
+                // let data = arr;
 
-                temp(data);
+                temp(arr);
             }else{
-                      snackBar("error","something went wrong while feching data");
+            snackBar("error","Fetch failed, showing old data");
+                temp(arr);
 
             }
 
