@@ -40,6 +40,8 @@ const postBlogDB = (obj)=>{
     if(!error1){
         PostBlogArr.push(obj);
           FetchBlog(PostBlogArr);
+          snackBar("succsses","Added");
+
     }else{
 
       snackBar("error","something went wrong while postBlog");
